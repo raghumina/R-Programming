@@ -1,0 +1,41 @@
+# FIRST WE HAVE TO IMPORT THE FILES IN WHICH WE WANT TO APPLY ALL THIS CONCEPTS
+# MY FILE HERE IS "Customer"
+# DATA VISVUALIZATION IN R 
+View(Customer)
+y <- table(Customer$Gender)
+
+# VIEW DATA IN FORM OF A BAR PLOT 
+View(y)
+barplot(y)
+
+# TO VIEW IN ASCENDING ORDER
+barplot(y[order (y)])
+# TO VIEW IN DECENDING ORDER WE WILL USE -y IN [()] INSREAD OF y
+
+# TO CHANGE THE ORIENTATION FOR EG HORIZONTAL VERTICAL ETC
+barplot(y[order (y)],horiz = TRUE)
+barplot(y[order (y)],verti = TRUE)
+
+# TO CHANGE THE COLORS OF BAR PLOT 
+barplot(y[order (y)],col = "red")
+
+# TO CHANGE THE COLORS OF BARS (DIFFERENT DIFFERENT COLOR)
+barplot(y,col = c("red","blue"))
+
+# TO CHECK THE LIST OF ALL AVAILABLE COLORS 
+colors()
+
+# IF WE WANT TO REMOVE THE BLACK BORDER AROUND THE BARS IN GRAPH 
+barplot(y,col = c("red","blue"), border = NA)
+
+# TO ADD A TITLE ON THE CHART 
+barplot(y,col = c("red","blue"), border = NA, main = "GENDER RATIO")
+# IF THE HEADING IS TOO LONG WE CAN USE \n BETWEEN THE LINE
+
+# TO LABEL THE AXIS OF GRAPH (X OR Y )
+barplot(y,col = c("red","blue"), border = NA, main = "GENDER RATIO", ylab = "ratio")
+
+# IMPORT GRAPH TO AN IMAGE OR PDB FOR PRESENTATION 
+# 1ST WAY ONLY EXCLUSIVE TO R STUDIO GO TO EXPORT SELECT TYPE CHOOSE LOCATION AND SAVE
+
+
