@@ -84,3 +84,11 @@ y <- dummy.data.frame(y)
 View(y)
 y <- y[,-9]
 y <- y[,-14]
+
+
+# CO RELATION MATRIX IN R 
+cor(y)
+
+# TO ROUND UP DECIMAL VALUES UPTO 2
+round(cor(y),2)
+
