@@ -6,7 +6,6 @@ View(House_Price)
 str(House_Price)
 y <-House_Price <- read.csv("C:/Users/ashok/Desktop/BOOKS/Complete ML in R/1. Linear Regression/House_Price.csv",header = TRUE)
 View(y)
-remove(y)
 
 # Univaraiate analysis
 summary(House_Price)
@@ -16,6 +15,7 @@ pairs(~price+crime_rate+n_hos_beds+n_hot_rooms+rainfall,data = y)
 barplot(table(y$airport))
 
 # OBSERVATONS 
+# OBSERVATIONS THAT NEED TO BE FIXED 
 #n_hot_room and rainfall have outliers
 # n_hos_beds has missing values 
 # bus_ter is a useless varaible 
@@ -53,3 +53,34 @@ summary(y$n_hos_beds)
 
 # SEASONALITY IN DATA 
 # WE CAN REMOVE IT BY MULTIPICATION FACTOR 
+
+pairs(~price+crime_rate,data=y)
+plot(y$price,y$crime_rate)
+
+# TO CHANGE CRIME RATE VARIABLE 
+y$crime_rate=log(1+y$crime_rate)
+
+# TRANSFORMATION OF 4 DISTANCE VARIABLE INTO 1 DISTANCE VARIABLE 
+
+y$avg_dist = (y$dist1+y$dist2+y$dist3+y$dist4)/4
+View(y$avg_dist)
+str(y$avg_dist)
+
+# Delete unusable variables dist1,dist2,dist3,dist4
+y <-y[,-7:-10]
+View(y)
+
+# will also remove bus terminal 
+y <- y[,-14]
+
+# CREATION OF DUMMY VARIABLE FOR THE NON NUMERICAL VARIABLE 
+# CREATE A NEW VARIABLE AND ASSIGN ITS THE VALUES 0 AND 1 
+# SUCH AS AIRPORT AND WATER_BODIES WHICH HAVE NON NUMERICAL VALUES 
+
+# FOR DUMMY VARAIBLE CREATION WE WILL INSTALL A DUMMY VARIABLE PACKAGE 
+install.packages("dummies")
+
+y <- dummy.data.frame(y)
+View(y)
+y <- y[,-9]
+y <- y[,-14]
