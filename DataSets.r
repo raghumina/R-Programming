@@ -92,3 +92,6 @@ cor(y)
 # TO ROUND UP DECIMAL VALUES UPTO 2
 round(cor(y),2)
 
+# remove park to ignore  multi colieanerity 
+y<-y[,-16]
+
