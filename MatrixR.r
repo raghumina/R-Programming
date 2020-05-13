@@ -51,3 +51,4 @@ b<-1:10
 # mean 
 rowMeans(a)
 colMeans(a)
+cbind(a)

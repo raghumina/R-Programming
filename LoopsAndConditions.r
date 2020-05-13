@@ -86,3 +86,55 @@ for(i in 1:10)
 
 
 # LOOPS COMPLETED 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# loops and conditions practice 
+
+check <- 1
+if(check == 1)
+{
+  print("hhekko")
+}
+
+
+# if else 
+
+check <-5
+ifelse(check == 5,"True","Flase")
+
+# power of if else 
+testvalu <- y(1,0,0,0,0,1,1,1)
+
+ifelse(testvalu ==1, "true" , "false")
+
+
+
+
+
