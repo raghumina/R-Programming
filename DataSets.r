@@ -95,3 +95,16 @@ round(cor(y),2)
 # remove park to ignore  multi colieanerity 
 y<-y[,-16]
 
+
+# Linear regression R
+# lm function = linear model function 
+
+
+sample_model <-lm(price~room_num,data = y)
+summary(sample_model)
+
+
+plot(y$room_num,y$price)
+
+# to check the line on the modle 
+abline(sample_model)
