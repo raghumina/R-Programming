@@ -29,3 +29,4 @@ head(x)
 # "tail" returns the last few rows of data frames
 tail(x)
 
+seq(x)

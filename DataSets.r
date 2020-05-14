@@ -108,3 +108,7 @@ plot(y$room_num,y$price)
 
 # to check the line on the modle 
 abline(sample_model)
+
+View(y)
+# MULTIPLE LINEAR REGRESSION 
+
