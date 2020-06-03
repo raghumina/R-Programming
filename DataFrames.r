@@ -30,3 +30,4 @@ head(x)
 tail(x)
 
 seq(x)
+average(x)
