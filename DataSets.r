@@ -111,4 +111,10 @@ abline(sample_model)
 
 View(y)
 # MULTIPLE LINEAR REGRESSION 
+y$airportYES
+y$`waterbodyLake and River`
 
+
+# multiple linear regression model in R
+multiple_model<-lm(price~.,data = y)
+summary(multiple_mode
