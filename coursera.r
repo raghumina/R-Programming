@@ -73,4 +73,5 @@ plot(dnorm,-3,3, col = "red", main = "standard normal distribution",
      xlab = "z-score",
      ylab = "density")
 
-
+# detach the dataset 
+detach("package:datasets", unload = TRUE)
