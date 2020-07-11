@@ -25,3 +25,30 @@ plot()
 
 detach("package:datasets", unload = TRUE)
 dev.off()
+
+
+# lets install a package 
+
+install.packages
+
+library(pacman)
+require(pacman)
+
+pacman ::p_load(pacman,tidyr,stringr)
+
+p_unload(all)
+
+
+library(datasets)
+head(iris)
+
+?plot
+
+plot(iris$Species)
+plot(iris$Petal.Length)
+plot(iris$Sepal.Length)
+plot(iris$Sepal.Width)
+plot(iris$Petal.Width)
+
+
+plot(iris$Sepal.Length, iris$Sepal.Width, col= "green", pch =  19, main = "sEPA LENGTH AND WIDTH", xlab = "PETAL LEGTH", ylab = "PETAL WIDTH")
