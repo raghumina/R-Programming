@@ -53,9 +53,24 @@ plot(iris$Sepal.Width)
 plot(iris$Petal.Width)
 
 
+# col = cplor of the graph
+# main  = title of the plot 
+# xlab = x axis
+# ylab = y axsis
+
 plot(iris$Sepal.Length, iris$Sepal.Width, col= "green", pch =  19, main = "sEPA LENGTH AND WIDTH",
      xlab = "PETAL LEGTH", ylab = "PETAL WIDTH")
 
 # PLOT FORMULAS WITH PLOT
-plot(cos 0, 2*pi)
-plot(exp (1,5))
+plot(cos,0, 2*pi)
+plot(exp,1,5)
+
+
+# formula plot with options 
+# dnorm = density of normal distribution 
+
+plot(dnorm,-3,3, col = "red", main = "standard normal distribution",
+     xlab = "z-score",
+     ylab = "density")
+
+
