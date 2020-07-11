@@ -1,5 +1,6 @@
 # Data visualization - continous one variable
-
+library(ggplot2)
+library(dplyr)
 # import a dataset and we will work on it 
 
 db <- read.csv("C:/Users/ashok/Desktop/BOOKS/Complete ML in R/1. Linear Regression/Movie_collection_test.csv", header = T)
@@ -7,6 +8,7 @@ db <- read.csv("C:/Users/ashok/Desktop/BOOKS/Complete ML in R/1. Linear Regressi
 # to take only required amount of data from a large dataset 
 # we use 
 #   "db <- sample_frac(db,0.1)"
-
+View(db)
+plot <- ggplot2(db)
 
 
