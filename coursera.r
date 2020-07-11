@@ -44,6 +44,8 @@ head(iris)
 
 ?plot
 
+# PLOT WITH OPTION
+
 plot(iris$Species)
 plot(iris$Petal.Length)
 plot(iris$Sepal.Length)
@@ -51,4 +53,9 @@ plot(iris$Sepal.Width)
 plot(iris$Petal.Width)
 
 
-plot(iris$Sepal.Length, iris$Sepal.Width, col= "green", pch =  19, main = "sEPA LENGTH AND WIDTH", xlab = "PETAL LEGTH", ylab = "PETAL WIDTH")
+plot(iris$Sepal.Length, iris$Sepal.Width, col= "green", pch =  19, main = "sEPA LENGTH AND WIDTH",
+     xlab = "PETAL LEGTH", ylab = "PETAL WIDTH")
+
+# PLOT FORMULAS WITH PLOT
+plot(cos 0, 2*pi)
+plot(exp (1,5))
