@@ -72,4 +72,12 @@ vnumeric<- c(1,2,3)
 vcharacter<- c("a","b","c")
 vlogical <- c(T,T,F)
 
+dfac <- cbind(vnumeric,vcharacter,vlogical)
+print(dfac)
+
+df <- as.data.frame(cbind(vnumeric,vlogical,vcharacter))
+print(df)
+
+
+# LISTS 
 
