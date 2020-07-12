@@ -8,4 +8,21 @@ summary(iris$Sepal.Length)  # quantative variable
 summary(iris$Species)   # categorical values 
 summary(iris)  # all of the data frame 
 
+pacman::p_load(pacman, dplyr, GGally, ggplot2, ggthemes, ggvis, httr,
+               lubridate, plotly, rio, rmarkdown, shiny, stringr, tidyr)
+
+
+p_load(psych)
+p_help(psych)
+p_help(psych, web = F)
+
+
+# Describe()
+# desc()
+# use for quantative variable only not for catagorical variables 
+
+desc(iris)
+describe(iris)
+
+
 
