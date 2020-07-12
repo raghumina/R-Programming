@@ -57,10 +57,19 @@ print(m2)
 # GIVE DATA THEN DIMENSION 
 # ROW COLOUMN TABLE 
 
-a1 <- array(c(1:24),c(4,3,2))  # it says 2 matrices of 4 rows and 3 coloumns
+a1 <- array(c(1:24),c(4,3,2))  # it says 2 table of 4 rows and 3 coloumns
 print(a1)
 
 # lets check anotger example 
 
-a2 <-array(c(1:24),c(2,2,6))  # 6 matrix of 2 rows and 2 coloumns 
+a2 <-array(c(1:24),c(2,2,6))  # 6 table of 2 rows and 2 coloumns 
 print(a2)
+
+
+# can combine vectors of same length but different types 
+
+vnumeric<- c(1,2,3)
+vcharacter<- c("a","b","c")
+vlogical <- c(T,T,F)
+
+
