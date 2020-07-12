@@ -25,4 +25,17 @@ desc(iris)
 describe(iris)
 
 
+hist(iris$Petal.Length[iris$Species == "versicolor"], main = "Petal length : versicolor ",
+     col = "red")
 
+
+hist(iris$Petal.Length[iris$Species == "setosa"], main = "Petal length : versicolor ",
+     col = "blue")
+
+
+hist(iris$Petal.Length[iris$Species == "virginica"], main = "Petal length : versicolor ",
+     col = "green")
+
+# SELECTORS
+
+hist(iris$Petal.Length[iris$Species == "setosa" & iris$Petal.Length < 5.5], col = "purple")
