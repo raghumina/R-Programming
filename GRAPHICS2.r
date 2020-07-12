@@ -34,3 +34,5 @@ hist(iris$Petal.Width [iris$Species == "versicolor"], xlim = c(0, 3), breaks = 9
 hist(iris$Petal.Width [iris$Species == "setosa"], xlim = c(0, 3), breaks = 9,
      col = "red")
 
+
+
