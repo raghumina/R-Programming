@@ -43,3 +43,24 @@ is.vector(v2)
 
 m1 <- matrix(c(T,T,F,T,F,T,T), nrow = 2)
 m1
+
+m2 <- matrix(c("a","b",
+               "c","d"),
+             nrow = 2,
+             byrow = T)
+
+print(m2)
+
+
+# ARRAYS
+
+# GIVE DATA THEN DIMENSION 
+# ROW COLOUMN TABLE 
+
+a1 <- array(c(1:24),c(4,3,2))  # it says 2 matrices of 4 rows and 3 coloumns
+print(a1)
+
+# lets check anotger example 
+
+a2 <-array(c(1:24),c(2,2,6))  # 6 matrix of 2 rows and 2 coloumns 
+print(a2)
