@@ -31,4 +31,4 @@ mean(sol$Attributesx)
 mean(sol$AttributesY)
 
 
-result <- kmeans(sol, sol$Attributesx,sol$AttributesY)
+result <- kmeans(sol, 4)
