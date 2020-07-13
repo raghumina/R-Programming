@@ -39,3 +39,6 @@ hist(iris$Petal.Length[iris$Species == "virginica"], main = "Petal length : vers
 # SELECTORS
 
 hist(iris$Petal.Length[iris$Species == "setosa" & iris$Petal.Length < 5.5], col = "purple")
+
+
+View(iris)
