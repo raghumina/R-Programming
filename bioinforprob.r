@@ -23,9 +23,11 @@ plot(sol$Attributesx, sol$AttributesY, col = "red",
      main = "Medicine")
 
 
+
+
 # k mean clustring 
 
-mydata <- select(sol,c(2,3))
-plot(mydata)
 
-KM = kmeans()
+sol-km = kmeans(sol, centers = 1)
+
+KMs$cluster
