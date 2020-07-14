@@ -42,3 +42,4 @@ hist(iris$Petal.Length[iris$Species == "setosa" & iris$Petal.Length < 5.5], col 
 
 
 View(iris)
+View(sol)
