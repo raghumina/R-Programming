@@ -61,7 +61,10 @@ print(x5)
 
 x6 <- scan()
 
+print(x6)
 
+# rep = repetation 
+# use for repetation
 
 
 
