@@ -85,9 +85,11 @@ print(x10)
 x11 <- rep(TRUE, FALSE, each = 5)
 print(x11)
 
+x12 <- rep(c(TRUE, FALSE), each = 5)
+print(x12)
 
 
-
+# 
 
 
 
