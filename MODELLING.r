@@ -48,3 +48,10 @@ plot(carss)
 
 
 
+# compute pca
+ pc <- prcomp(carss, 
+              center = TRUE,      # CENTRE MEANS TO 0
+              scale = TRUE)      # SET UNIT VARIANCE
+ 
+plot(pc)
+summary(pc)
