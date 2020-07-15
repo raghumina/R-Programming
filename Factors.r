@@ -65,8 +65,25 @@ print(x6)
 
 # rep = repetation 
 # use for repetation
+?rep
 
 
+x8 <- rep(TRUE, FALSE, 8)
+print(x8)
+
+# one more example 
+# ADD TWO FUNCTIONS TOGETHER 
+x9 <- rep(seq(3, 30, by = 3), 10)
+print(x9)
+
+# one more exampel 
+
+x10 <- rep(TRUE, FALSE ,  5)
+print(x10)
+
+# if we want each of the values for a specific time 
+x11 <- rep(TRUE, FALSE, each = 5)
+print(x11)
 
 
 
