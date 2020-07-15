@@ -24,3 +24,27 @@ plot(hc, col = "red")
 
 # ADD BOXES TO PLOT 
 
+rect.hclust(hc, k = 2, border = "grey")
+rect.hclust(hc, k = 3, border = "blue")
+rect.hclust(hc, k = 4, border = "yellow")
+rect.hclust(hc, k = 5, border = "green")
+
+
+#########################################################################################################
+
+# PRINCIPAL COMPONENTS 
+
+pacman::p_load(pacman, dplyr, GGally, ggplot2, rio, ggthemes, ggvis, httr, rmarkdown, shiny, stringr, tidyr,
+               lubridate)
+
+library(datasets)
+head(mtcars)
+               
+
+carss <- mtcars[, c(1:4, 6:7, 9:11)]
+head(carss)
+
+plot(carss)
+
+
+
