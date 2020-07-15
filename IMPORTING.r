@@ -2,7 +2,7 @@
 # BY TRADITRIONL WAY 
 # IMPORTING DATA A .CSV FILE 
 
-data1 <- read.csv("C:/Users/ashok/Desktop/BOOKS/Complete ML in R/1. Linear Regression/Customer.csv")
+data1 <- read.csv("C:/Users/ashok/Desktop/BOOKS/Complete ML in R/1. Linear Regression/Customer.csv", hea)
 print(data1)
 View(data1)
 plot(data1$Customer.ID,data1$Age, col = "red")
@@ -29,3 +29,5 @@ Customertxt <- import("C:/Users/ashok/Desktop/BOOKS/Sequence.txt")
 print(Customertxt)
 head(Customertxt)
 View(Customertxt)
+
+
