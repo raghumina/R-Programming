@@ -4,7 +4,7 @@
 
 
 # 
-#  ASIIGNMENTS IN R 
+## ASIIGNMENTS IN R 
 x = 1 
 print(x)    #   = SIGN CAN ALSO BE USED BUT ( <- ) THIS ASSIGNMET IS MORE PREFERABLE 
 
@@ -16,4 +16,19 @@ print(name)
 
 name1 = "Jerry"
 print(name1)       # like this character values should be in ( "" ).
+
+
+# FUNCTIONS 
+##  FUNCTIONS IN R 
+
+# 1ST FUNCTION 
+# print() function
+
+print("yohoo")  
+
+print(2 + 2 )
+
+print("hello",2 + 2)  # this will only prints the first variable 
+
+
 
