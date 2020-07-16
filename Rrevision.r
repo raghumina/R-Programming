@@ -64,3 +64,11 @@ print(nummen)
 
 num4 <- sum(1,2,3,4,5,6,7,8,9,0)   # to find the sum of the set of the numbers 
 print(num4)
+
+# to find the type of the input 
+typeof(10)
+typeof("hello")
+
+
+
+
