@@ -30,5 +30,37 @@ print(2 + 2 )
 
 print("hello",2 + 2)  # this will only prints the first variable 
 
+## COMPUTATIONS 
 
+1 + 1   # ADDITION 
 
+22 - 22  # SUBSTRACTION 
+
+31 / 0   # DIVIDE 
+
+45 / 10
+
+22 * 10  # MULTIPLY 
+
+2 ** 2  # TO THE POWER 
+
+2 ** 3 
+
+# WITH ASSIGNMENT QUERY 
+
+num <- 12 + 15 
+print(num)
+
+num1 <- sqrt(2)   # square root function sqrt()
+print(num1)
+
+num2 <- seq(12)  # gives the sequence of the input from 1 
+print(num2)
+
+num3 <- c(1,2,3)     # use c() to convert the set of number in vector 
+print(num3)
+nummen <- mean(num3)
+print(nummen)
+
+num4 <- sum(1,2,3,4,5,6,7,8,9,0)   # to find the sum of the set of the numbers 
+print(num4)
