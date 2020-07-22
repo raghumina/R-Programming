@@ -22,6 +22,9 @@ plot(demo$lengths,demo$codons,
      main = "plot of demo1")       # to creat a specific plot 
                                    # with color, name, other criteria 
 
+x <- demo[1:4]
+plot(x)
+
 # to create other plots or graphgs 
 # for example a histogram 
 
@@ -30,11 +33,43 @@ hist(demo$orf)
 
 str(demo)                         # to see the structure of the data 
 
+# IT IS NECESSARY TO HAVE ALL DATATYPE AS NUMERICAL 
 
-d1 <- kmeans(demo, 4)
-print(d1)
+summary(demo)   # Summary of the data 
 
-plot(d1$cluster, col = "red")
 
- 
+# using K- mean cluster on DATA
+# k-mean clustring on data can be applied through " kmean() " function 
+# k- mean is a unsupervised learning
+
+
+democluster <- kmeans(demo,4)
+print(democluster)
+plot(democluster)
+
+
+democluster4 <- kmeans(demo, centers = 4)
+
+# Show the centres 
+democluster4$centers
+democluster4$cluster
+
+# Plot the groups 
+
+plot(demo [democluster4$cluster == 1,],
+     col = "red",
+     xlim=c( min(demo[,1]), max(demo[,1])),
+     ylim=c(min(demo[,2]), max(demo[,2]))
+      )
+
+points( demo [democluster4$cluster == 2, ],
+       col = "blue")
+
+points( demo [democluster4$cluster == 3, ],
+       col = "green")
+
+points( demo [democluster4$cluster == 4, ],
+       col = "yellow")
+
+points(democluster4$centers, pch = 2, col = "seagreen")
 
