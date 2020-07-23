@@ -5,7 +5,8 @@
 library(rio)       # r input output
 library(dplyr)     # r data manipualtion library 
 library(ggplot2)   # r data visvualization library 
-
+library(stats)
+library(ggfortify)
 # to import a data frame 
 
 data1 <- import("C:/workspace/R-Programming/daily.csv")
@@ -16,7 +17,4 @@ data1.feature$class <- NULL
 View(data1.feature)
 
 # Scatter plot 
-plot(data1.feature$positive,data1.feature$states)
-
-data <- hclust(data1.feature$negative)
-
+autoplot(data1.feature,data1, frame = TRUE)
