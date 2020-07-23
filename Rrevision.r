@@ -69,6 +69,6 @@ print(num4)
 typeof(10)
 typeof("hello")
 
-
+View(iris)
 
 
