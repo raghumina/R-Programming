@@ -1,0 +1,5 @@
+Name,Accession iD,Target,Weight(Average),Weight(Monoisotopic),Absorption(%),Protein binding(%)
+Ethambutol,DB00330,3,204.3098,204.183778,80,25
+Acetaminophen,DB00316,4,151.1626,151.0633285,88,25
+Isoniazid,DB00951,7,137.1393,137.0589119,,10
+Rifampicin,DB01045,2,822.9402,822.4051233,,89
