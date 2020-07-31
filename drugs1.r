@@ -1,15 +1,9 @@
-library(stats)
-library(ggplot2)
-library(dplyr)
-library(ggfortify)
 
 
 
 
 
-
-
-
+# kmeans analysis of the meedicines 
 
 
 data <- import("Drugs.csv")
