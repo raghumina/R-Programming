@@ -24,3 +24,8 @@ legend("topright", bty = "n", legend = c("Cv1","Cv2","Cv3")
 
 
 
+dev.off() # clear the format from the previous plot
+winePCA <- prcomp(scale(wine[,-1]))
+plot(winePCA$x[,1:2], col = wineClasses)
+
+
