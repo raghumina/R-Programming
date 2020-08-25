@@ -75,10 +75,3 @@ Pdb <- read.csv(Pdb)
 
 
 
-
-x1 <- 1:10
-x2 <- 20:20
-x3 <- (1,2,3,4,3,2,1)
-x3 <- c(1,2,3,4,3,2,1)
-read.csv(Data)
-read.csv(Data.csv)
