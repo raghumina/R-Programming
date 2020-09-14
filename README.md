@@ -1,2 +1,4 @@
 # R Programming
- Basics of R
+ Basics of R (Beginner level)
+ Programs 
+ Problems and Solution
