@@ -38,14 +38,22 @@ hist(norm_simu)
 #hist(norm_simu, freq = F)
 curve(dnorm(x, mean = 8,sd = 2),from = 0,to = 10, add = T,col = "red")
 
-# 
+# Summary statistics
+mean(norm_simu)
+sd(norm_simu)
 
 
+# replicate() is like for loop replicate the process for given n times 
+norm_sim_all <- replicate(n = 4, rnorm(n = 100, mean = 5, sd = 2))
+print(norm_sim_all)
 
+par(mfrow=c(2,2))
+apply(X = norm_sim_all,MARGIN = 2, FUN = hist)
+apply(X = norm_sim_all,MARGIN = 2, FUN = mean)
+apply(X = norm_sim_all,MARGIN = 2, FUN = sd)
 
-
-
-
+# apply is a r function which works like for or while loop in r 
+# it is use in r to decrease the codelines
 
 
 
