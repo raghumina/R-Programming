@@ -14,7 +14,7 @@
 # min = minimum limit
 # max = maximum limit 
 
-runif(n=100,min = 1,max = 100)
+runif(n=10000,min = 1,max = 100)
 #runif(n = 100)  # so here random number generation will be between 1 to 10 but 
 # it will generate 1000 random numbers between 1 - 10 
 
@@ -29,7 +29,7 @@ sd(random_num_100)   # standard deviation
 # sd or standard deviation: is measure of amount of variance or dispersion of a set of value
 # 
 
-norm_simu <- rnorm(n = 100, mean = 5, sd = 2)
+norm_simu <- rnorm(n = 100,mean = 5,  sd = 2)
 norm_simu
 
 par(mfrow=c(3,1))   # par function to include nrows and ncoloumns
@@ -59,6 +59,17 @@ apply(X = norm_sim_all,MARGIN = 2, FUN = sd)
 
 
 
+# a new monte carlo problem 
+#
 
+
+runs <- 100000
+#simulates on game of 10 spins, returns whether the sum of all the spins is < 1
+play.game <- function(){
+  results <- sample(c(1,1,-1,2),10,replace=T)
+  return(sum(results) < 0)
+}
+mc.prob <- sum(replicate(runs,play.game()))/runs
+print(mc.prob)
 
 
