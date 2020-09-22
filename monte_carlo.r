@@ -60,7 +60,18 @@ apply(X = norm_sim_all,MARGIN = 2, FUN = sd)
 
 
 # a new monte carlo problem 
-#
+# The great spinner of probability!
+
+#In this game landing on 'yellow' you gain 1 point, 'red' you lose 1 point and 'blue' you gain 2 points.
+#We can easily calculate the expectation: 
+#  E(\text{spinner}) = 1/2 \cdot 1 + 1/4 \cdot -1 + 1/4 \cdot 2 = 0.75E(spinner)=1/2???1+1/4??????1+1/4???2=0.75
+#This could have been calculated with a Monte Carlo simulation, but the hand calculation is really easy.
+#Let's ask a trickier question "After 10 spins what is the probability that you'll have less then 0 points?"
+#There are methods to analytically solve this type of problem,
+#but by the time they are even explained we could have already written our simulation!
+
+#To solve this with a Monte Carlo simulation we're going to sample from our Spinner 10 times,
+#and return 1 if we're below 0 other wise we'll return 0. We'll repeat this 100,000 times to see how often it happens!
 
 
 runs <- 100000
