@@ -42,5 +42,14 @@ mix_vector[1:3] # for upto a specific range
 
 # List 
 # Single dimensional heterogenous data structure 
+# we can store different types of elements 
+# 
+l1 <- list(1,"1",T)
+l1
 
+# to check the class of the components of the list 
+class(l1[[1]])
+class(l1[[2]])
 
+l2 <- list(c(1,2,3,4), c("1","2","c","d"), c(T,F,T,F))
+l2
