@@ -57,6 +57,20 @@ num1 != num2
 # Logical opeartor 
 # 
 
+log1 = TRUE
+log2 = FALSE
+
+
+log1 & log2
+log2 & log1
+log2 & log2
+
+log1 | log2
+log2 | log1
+log1 | log1
+
+#-----------------------------------------------------------------------------------#
+
 
 
 
