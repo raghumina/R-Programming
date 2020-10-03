@@ -28,6 +28,19 @@ typeof(mix_vector)
 # the type of mix vector is character because the order of precedence of the character 
 # value is higher then number and boolean 
 
+# Extracting values from vector
+mix_vector[2]
+mix_vector[1]
+mix_vector[3]
+mix_vector[1:3] # for upto a specific range 
 
+# by using [] and the number of the position of the value we can extract the desired value 
+# from the vector
+
+
+#--------------------------------------------------------------------------------------#
+
+# List 
+# Single dimensional heterogenous data structure 
 
 
