@@ -26,6 +26,19 @@ ggplot(data= diamonds,aes(x=cut, fill= cut)) + geom_bar()
 
 # to make comparision between two numerical values 
 
-ggplot(data= diamonds,aes(x=carat, y=price)) + geom_point()
+ggplot(data= diamonds,aes(x=carat, y=price, col=cut)) + geom_point()
+
+
+# box plot 
+# 
+
+ggplot(data= diamonds,aes(x=carat, y=price, fill=clarity)) + geom_boxplot()
+
+# 
+# Faceting 
+#  With facetting, you can make multi-panel plots and control how the scales of
+# one panel relate to the scales of another.
+
+ggplot(data= diamonds,aes(x=clarity, y=carat, fill=cut)) + geom_boxplot() + facet_grid(~cut)
 
 
