@@ -21,4 +21,37 @@ table(pokemon$type1)
 min(pokemon$hp)
 max(pokemon$hp)
 
+min(pokemon$speed)
+max(pokemon$speed)
+
+# checking missing values
+is.na(pokemon$abilities)
+is.na(pokemon$is_legendary)
+is.na(pokemon$type2)
+
+sum(is.na(pokemon$type2))
+sum(is.na(pokemon$percentage_male))
+
+
+# Reanaming coloumns 
+
+colnames(pokemon)[colnames(pokemon)] == "type1" <- primary_type
+View(pokemon)
+
+
+#------------------------------------------------------------------------------------------------#
+
+library(dplyr)
+
+pokemon %>% filter(pokemon$type1=="grass") -> grass_pokemon
+grass_pokemon
+
+
+min(grass_pokemon$speed)
+max(grass_pokemon$speed)
+
+mean(grass_pokemon$sp_attack)
+mean(grass_pokemon$sp_defense)
+
+# Visvualizing stats of grass pokemon
 
