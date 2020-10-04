@@ -47,11 +47,18 @@ pokemon %>% filter(pokemon$type1=="grass") -> grass_pokemon
 grass_pokemon
 
 
-min(grass_pokemon$speed)
-max(grass_pokemon$speed)
+min(grass_pokemon$speed)  # 10
+max(grass_pokemon$speed)  # 145
 
-mean(grass_pokemon$sp_attack)
-mean(grass_pokemon$sp_defense)
+mean(grass_pokemon$sp_attack)  # 74
+mean(grass_pokemon$sp_defense) # 69
 
 # Visvualizing stats of grass pokemon
+library(ggplot2)
+
+# for hp
+ggplot(data= grass_pokemon,aes(x=hp)) + geom_histogram(fill="red",col="black")
+
+# for height 
+
 
