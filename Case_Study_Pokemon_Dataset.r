@@ -60,5 +60,11 @@ library(ggplot2)
 ggplot(data= grass_pokemon,aes(x=hp)) + geom_histogram(fill="red",col="black")
 
 # for height 
+ggplot(data= grass_pokemon,aes(x=height_m)) + geom_histogram(fill="red",col="black")
 
+# for weight
+ggplot(data= grass_pokemon,aes(x=weight_kg)) + geom_histogram(fill="red",col="black")
+
+# legendry vs non legendry 
+ggplot(data= grass_pokemon,aes(x=is_legendary)) + geom_histogram(fill="red",col="black")
 
