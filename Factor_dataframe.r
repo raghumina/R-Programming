@@ -5,6 +5,20 @@
 # They are useful in data analysis for statistical modeling.
 
 
+color1 <- c("red","green","blue")
+as.factor(color1) -> color1
+color1
+
+
+#--------------------------------------------------------------------------------------#
+
+# Data frame 
+# two dimensionl heterogenous data strucutre
+
+fruits <- data.frame(Name = c("apple","banana","mango"), price = c(12,12,21))
+fruits
+fruits$Name
+
 
 
 
